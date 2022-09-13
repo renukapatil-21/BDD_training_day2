@@ -19,5 +19,5 @@ Scenario Outline: Add valid Employee
 
 Examples: 
 		 | username | password | firstname | middlename | lname   | empid | toggle_login | account_user | account_password | confirm_password | status   |
-		 | admin    | admin123 | Saul      | J          | Goodman | 1005  | on           | jimmy13      | Welcome@123      | Welcome@123      | disabled |
-		 | admin    | admin123 | Peter     | J          | Goodman | 1006  | on           | peter13      | Welcome@123      | Welcome@123      | disabled |
+		 | admin    | admin123 | Saul      | J          | Goodman | 1003  | on           | jimmy13      | Welcome@123      | Welcome@123      | disabled |
+		 | admin    | admin123 | Peter     | J          | Goodman | 1007  | on           | peter13      | Welcome@123      | Welcome@123      | disabled |

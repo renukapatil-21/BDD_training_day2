@@ -85,8 +85,8 @@ namespace Day1_SpecFlowProject1.Features
         [Xunit.TraitAttribute("FeatureTitle", "Employee")]
         [Xunit.TraitAttribute("Description", "Add valid Employee")]
         [Xunit.TraitAttribute("Category", "high")]
-        [Xunit.InlineDataAttribute("admin", "admin123", "Saul", "J", "Goodman", "1005", "on", "jimmy13", "Welcome@123", "Welcome@123", "disabled", new string[0])]
-        [Xunit.InlineDataAttribute("admin", "admin123", "Peter", "J", "Goodman", "1006", "on", "peter13", "Welcome@123", "Welcome@123", "disabled", new string[0])]
+        [Xunit.InlineDataAttribute("admin", "admin123", "Saul", "J", "Goodman", "1003", "on", "jimmy13", "Welcome@123", "Welcome@123", "disabled", new string[0])]
+        [Xunit.InlineDataAttribute("admin", "admin123", "Peter", "J", "Goodman", "1007", "on", "peter13", "Welcome@123", "Welcome@123", "disabled", new string[0])]
         public void AddValidEmployee(string username, string password, string firstname, string middlename, string lname, string empid, string toggle_Login, string account_User, string account_Password, string confirm_Password, string status, string[] exampleTags)
         {
             string[] @__tags = new string[] {
@@ -137,7 +137,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 13
  testRunner.And("I click on Add Employee", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                             "firstname",
                             "middlename",
                             "lastname",
@@ -147,7 +147,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "password",
                             "confirm_password",
                             "status"});
-                table2.AddRow(new string[] {
+                table1.AddRow(new string[] {
                             string.Format("{0}", firstname),
                             string.Format("{0}", middlename),
                             string.Format("{0}", lname),
@@ -158,7 +158,7 @@ this.ScenarioInitialize(scenarioInfo);
                             string.Format("{0}", confirm_Password),
                             string.Format("{0}", status)});
 #line 14
- testRunner.And("I fill the add Employee section", ((string)(null)), table2, "And ");
+ testRunner.And("I fill the add Employee section", ((string)(null)), table1, "And ");
 #line hidden
 #line 17
  testRunner.And("I click on save employee", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
