@@ -84,11 +84,18 @@ namespace Day1_SpecFlowProject1.Features
         [Xunit.SkippableTheoryAttribute(DisplayName="Add valid Employee")]
         [Xunit.TraitAttribute("FeatureTitle", "Employee")]
         [Xunit.TraitAttribute("Description", "Add valid Employee")]
-        [Xunit.InlineDataAttribute("admin", "admin123", "Saul", "J", "Goodman", "1001", "on", "jimmy13", "Welcome@123", "Welcome@123", "disabled", new string[0])]
-        [Xunit.InlineDataAttribute("admin", "admin123", "Peter", "J", "Goodman", "1004", "on", "peter13", "Welcome@123", "Welcome@123", "disabled", new string[0])]
+        [Xunit.TraitAttribute("Category", "high")]
+        [Xunit.InlineDataAttribute("admin", "admin123", "Saul", "J", "Goodman", "1005", "on", "jimmy13", "Welcome@123", "Welcome@123", "disabled", new string[0])]
+        [Xunit.InlineDataAttribute("admin", "admin123", "Peter", "J", "Goodman", "1006", "on", "peter13", "Welcome@123", "Welcome@123", "disabled", new string[0])]
         public void AddValidEmployee(string username, string password, string firstname, string middlename, string lname, string empid, string toggle_Login, string account_User, string account_Password, string confirm_Password, string status, string[] exampleTags)
         {
-            string[] tagsOfScenario = exampleTags;
+            string[] @__tags = new string[] {
+                    "high"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("username", username);
             argumentsOfScenario.Add("password", password);

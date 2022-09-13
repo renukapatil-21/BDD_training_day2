@@ -3,7 +3,7 @@
 			As a user
 			I want to login into portal
 
-@tag1
+@high
 Scenario: Valid Credetials
 	Given I have browser with orangehrm page
 	When I enter username as 'Admin'

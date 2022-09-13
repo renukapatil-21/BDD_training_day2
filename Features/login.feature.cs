@@ -84,11 +84,11 @@ namespace Day1_SpecFlowProject1.Features
         [Xunit.SkippableFactAttribute(DisplayName="Valid Credetials")]
         [Xunit.TraitAttribute("FeatureTitle", "login")]
         [Xunit.TraitAttribute("Description", "Valid Credetials")]
-        [Xunit.TraitAttribute("Category", "tag1")]
+        [Xunit.TraitAttribute("Category", "high")]
         public void ValidCredetials()
         {
             string[] tagsOfScenario = new string[] {
-                    "tag1"};
+                    "high"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Valid Credetials", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 7
