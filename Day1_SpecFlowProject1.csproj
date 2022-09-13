@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="api_Petshop\Petshop\" />
     <Folder Include="Drivers\" />
     <Folder Include="Support\" />
   </ItemGroup>
